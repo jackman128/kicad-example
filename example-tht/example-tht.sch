@@ -1,0 +1,223 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Timer:NE555 U1
+U 1 1 5E2A2875
+P 4800 3350
+F 0 "U1" H 4550 3850 50  0000 C CNN
+F 1 "NE555" H 4550 3750 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 4800 3350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 4800 3350 50  0001 C CNN
+	1    4800 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5E2A549B
+P 4050 3150
+F 0 "R1" H 4120 3196 50  0000 L CNN
+F 1 "47k" H 4120 3105 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3980 3150 50  0001 C CNN
+F 3 "~" H 4050 3150 50  0001 C CNN
+	1    4050 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5E2A5E44
+P 5650 2900
+F 0 "R2" H 5720 2946 50  0000 L CNN
+F 1 "470" H 5720 2855 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5580 2900 50  0001 C CNN
+F 3 "~" H 5650 2900 50  0001 C CNN
+	1    5650 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5E2A6352
+P 5650 3350
+F 0 "R3" H 5720 3396 50  0000 L CNN
+F 1 "470" H 5720 3305 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5580 3350 50  0001 C CNN
+F 3 "~" H 5650 3350 50  0001 C CNN
+	1    5650 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5E2A6626
+P 4050 3800
+F 0 "C1" H 4165 3846 50  0000 L CNN
+F 1 "10u" H 4165 3755 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 4088 3650 50  0001 C CNN
+F 3 "~" H 4050 3800 50  0001 C CNN
+	1    4050 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5E2A6A5B
+P 5650 2600
+F 0 "D1" V 5689 2483 50  0000 R CNN
+F 1 "LED" V 5598 2483 50  0000 R CNN
+F 2 "LED_THT:LED_D4.0mm" H 5650 2600 50  0001 C CNN
+F 3 "~" H 5650 2600 50  0001 C CNN
+	1    5650 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5E2A7570
+P 5650 3650
+F 0 "D2" V 5689 3533 50  0000 R CNN
+F 1 "LED" V 5598 3533 50  0000 R CNN
+F 2 "LED_THT:LED_D4.0mm" H 5650 3650 50  0001 C CNN
+F 3 "~" H 5650 3650 50  0001 C CNN
+	1    5650 3650
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 4300 3350
+Wire Wire Line
+	5300 3550 5300 4250
+Wire Wire Line
+	5300 4250 3850 4250
+Wire Wire Line
+	3850 4250 3850 3450
+Wire Wire Line
+	3850 3450 4050 3450
+Wire Wire Line
+	4050 3450 4050 3650
+Wire Wire Line
+	4050 3300 4050 3400
+Connection ~ 4050 3450
+Wire Wire Line
+	4050 3000 4050 2750
+Wire Wire Line
+	4050 2750 5500 2750
+Wire Wire Line
+	5500 2750 5500 3150
+Wire Wire Line
+	5500 3150 5300 3150
+Wire Wire Line
+	5650 3050 5650 3150
+Wire Wire Line
+	5500 3150 5650 3150
+Connection ~ 5500 3150
+Connection ~ 5650 3150
+Wire Wire Line
+	5650 3150 5650 3200
+NoConn ~ 5300 3350
+Wire Wire Line
+	4300 3150 4200 3150
+Wire Wire Line
+	4200 3150 4200 3400
+Wire Wire Line
+	4200 3400 4050 3400
+Connection ~ 4050 3400
+Wire Wire Line
+	4050 3400 4050 3450
+Wire Wire Line
+	4050 3950 4800 3950
+Wire Wire Line
+	4800 3950 4800 3750
+$Comp
+L power:GND #PWR0101
+U 1 1 5E2B8269
+P 4800 4450
+F 0 "#PWR0101" H 4800 4200 50  0001 C CNN
+F 1 "GND" H 4805 4277 50  0000 C CNN
+F 2 "" H 4800 4450 50  0001 C CNN
+F 3 "" H 4800 4450 50  0001 C CNN
+	1    4800 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3950 4800 4100
+Connection ~ 4800 3950
+$Comp
+L power:+9V #PWR0102
+U 1 1 5E2B8C9A
+P 4800 2150
+F 0 "#PWR0102" H 4800 2000 50  0001 C CNN
+F 1 "+9V" H 4815 2323 50  0000 C CNN
+F 2 "" H 4800 2150 50  0001 C CNN
+F 3 "" H 4800 2150 50  0001 C CNN
+	1    4800 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2450 4800 2450
+Wire Wire Line
+	4800 2450 4800 2150
+Wire Wire Line
+	4800 2450 4800 2650
+Connection ~ 4800 2450
+Wire Wire Line
+	4800 2650 4250 2650
+Wire Wire Line
+	4250 2650 4250 3550
+Wire Wire Line
+	4250 3550 4300 3550
+Connection ~ 4800 2650
+Wire Wire Line
+	4800 2650 4800 2950
+Wire Wire Line
+	5650 3800 5650 4100
+Wire Wire Line
+	5650 4100 4800 4100
+Connection ~ 4800 4100
+Wire Wire Line
+	4800 4100 4800 4450
+$Comp
+L power:GND #PWR0103
+U 1 1 5E2BEB5B
+P 6850 2250
+F 0 "#PWR0103" H 6850 2000 50  0001 C CNN
+F 1 "GND" H 6855 2077 50  0000 C CNN
+F 2 "" H 6850 2250 50  0001 C CNN
+F 3 "" H 6850 2250 50  0001 C CNN
+	1    6850 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Barrel_Jack_MountingPin J1
+U 1 1 5E2CDA58
+P 6550 1950
+F 0 "J1" H 6607 2267 50  0000 C CNN
+F 1 "Barrel_Jack_MountingPin" H 6607 2176 50  0000 C CNN
+F 2 "digikey-footprints:Barrel_Jack_5.5mmODx2.1mmID_PJ-102A" H 6600 1910 50  0001 C CNN
+F 3 "~" H 6600 1910 50  0001 C CNN
+	1    6550 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR0104
+U 1 1 5E2CE0A1
+P 6850 1850
+F 0 "#PWR0104" H 6850 1700 50  0001 C CNN
+F 1 "+9V" V 6865 1978 50  0000 L CNN
+F 2 "" H 6850 1850 50  0001 C CNN
+F 3 "" H 6850 1850 50  0001 C CNN
+	1    6850 1850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6850 2050 6850 2250
+Wire Wire Line
+	6550 2250 6850 2250
+Connection ~ 6850 2250
+$EndSCHEMATC
